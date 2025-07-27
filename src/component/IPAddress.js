@@ -16,7 +16,7 @@ const IPAddress = () => {
 
   const fetchLocation = (ipAddress = "") => {
     fetch(
-      `https://geo.ipify.org/api/v2/country,city?apiKey=at_UImkNdx6KD6qT7VDI6L0LLKlYVDkC&ipAddress=${ipAddress}`
+      `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ipAddress}`
     )
       .then((res) => res.json())
       .then((data) => {
